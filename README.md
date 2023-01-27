@@ -5,7 +5,7 @@ Example of using shader graphs. See https://github.com/rasmusselsmark/unity-hlsl
 # Getting started
 
 1. Create a new 2D project in Unity (both URP or built-in works)
-1. Download and import [Graphics.unitypackage](Graphics.unitypackage) into your project
+1. Download and import [Graphics.unitypackage](https://github.com/rasmusselsmark/unity-shader-graph-2d/raw/main/Graphics.unitypackage) into your project
 1. Drag both background and cloud into to your scene
    - Set position of background image to (0, 0, 0) and scaling (0.4, 0.4, 1)
    - Set position of cloud image to (0, 0, -1) to bring it in front of background. Just keep scale at 1
