@@ -9,3 +9,6 @@ indent_size = 4
 
 [*.{csproj,json,sh}]
 indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false

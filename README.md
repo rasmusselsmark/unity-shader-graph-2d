@@ -24,7 +24,14 @@ Shader to set color for a texture
 
 1. Select the `Shaders` folder
 1. Create `Shader Graph -> Builtin -> Unlit Shader Graph` and name it `SolidColorTextureShader`
-1. Final shader graph:
+1. Add two variables `Color` and `MainTex` by clicking the `+` icon:  
+   ![Add variables](Documentation/Images/SolidColorTextureShaderGraph-Variables.png)
+1. Drag the two variables into the graph view
+1. Right-click and select `Create Node -> Input -> Texture -> Sample Texture 2D`
+1. Connect the `MainTex` variable to `Texture (T2)` in the added node. Also to see how the shader will work, choose a default texture for the variable:  
+   ![Connect texture node](Documentation/Images/SolidColorTextureShaderGraph-Texture.png)
+1. Add a new node `Math -> Basic -> Multiply` and connect `Color` and output from `Sample Texture 2D`
+1. Final shader graph should look like this:
    ![SolidColorTextureShaderGraph example](Documentation/Images/SolidColorTextureShaderGraph.png)
 1. Remember to click `Save Asset` button in upper-left corner to save the shader graph
 1. Right-click shader in Project window and select `Create -> Material` and name it `SolidColorTextureMaterial`
