@@ -52,8 +52,18 @@ Make texture less transparent over x-axis
 1. Remember to click `Save Asset` button in upper-left corner to save the shader graph
 1. Right-click shader in Project window and select `Create -> Material` and name it `GradientTextureMaterial`
 1. In Scene window, select the cloud and select `GradientTextureMaterial` as material
-1. Example:
+1. Example:  
    ![GradientTextureShaderGraph example](Documentation/Images/GradientTextureShaderExample.png)
+
+
+## PulsatingShader
+
+For fun, let's make a pulsating shader, i.e. that makes our sprite appears/disappears in a regular rythm. We can use the [Sine function](https://www.mathsisfun.com/sine-cosine-tangent.html) to get this behavior. 
+
+Use https://www.desmos.com/calculator for experimenting with Sine function (hint: we use `sin(x) * 0.5 + 0.5` to get value in range [0..1])
+
+1. The final shader graph:  
+   ![PulseShaderGraph example](Documentation/Images/PulseShaderGraph.png)
 
 
 # Links and credits
